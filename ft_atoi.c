@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int	ft_atoi(const char *nptr)
 {
 	int	i;
@@ -23,6 +21,5 @@ int	ft_atoi(const char *nptr)
 		nbr += nptr[i] - '0';
 		i++;
 	}
-	printf("\n%s\n%d\n", nptr, sign * nbr);
 	return (sign * nbr);
 }
