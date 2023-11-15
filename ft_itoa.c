@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aule-bre <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/11/13 15:11:50 by aule-bre          #+#    #+#             */
+/*   Updated: 2023/11/13 15:11:52 by aule-bre         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_size(int n)
@@ -29,8 +41,8 @@ unsigned int	ft_new(int n)
 
 char	*ft_itoa(int n)
 {
-	int	size;
-	char	*str;
+	int				size;
+	char			*str;
 	unsigned int	n2;
 
 	size = ft_size(n);
@@ -48,5 +60,5 @@ char	*ft_itoa(int n)
 		n2 /= 10;
 		size--;
 	}
-	return (str);	
+	return (str);
 }
